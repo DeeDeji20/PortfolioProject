@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: #426696;
+    opacity: .8;
+    font-weight: 600;
+    font-size: 3rem;
+}
+h3{
+    color: #426696;
+    opacity: .8;
+    font-weight: 600;
+}
+h2{
+    color: #658ec6;
+    opacity: .8;
+    font-weight: 500;
+}
+
+p, a{
+    color: #426696;
+    opacity: .8;
+    font-weight: 500;
+}
+main{
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass{
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+.circle1, .circle2{
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.3));
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    border-radius: 50%;
+}
+.circle1{
+    top: 3%;
+    left: 10%;
+}
+.circle2{
+    bottom: 3%;
+    right: 10%;
+}
+.dashboard{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+}
+/* .links{
+    display: flex;
+    flex-direction:column;
+} */
+.link{
+    display: flex;
+    align-items: center;
+    margin: 3rem 0;
+    padding: 1rem 5rem;
+}
+.links a{
+    text-decoration: none;
+}
+.links a:hover{
+    text-decoration: underline;
+}
+button{
+    padding:1rem 2rem;
+    cursor: pointer; 
+    border: none;
+    background: white;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    color: white;
+    margin-top: 10px;
+}
+.projects{
+    flex: 2;
+}
+.projects h1{
+    text-align: center;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 3rem;
+}
+.card{
+    display: flex;
+    background: linear-gradient(to left top, rgba(255, 255, 255, .2), rgba(255, 255, 255, .5));
+    border-radius: 1rem;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, .212);
+}
+.card-info>button{
+margin-top: 20px;
+}
+img{
+    max-width: 20rem;
+    height: 4rem;
+}
+@media screen and (max-width:824px){
+   .glass{
+       flex-direction: column;
+        width: 90%;
+   }
+
+}
